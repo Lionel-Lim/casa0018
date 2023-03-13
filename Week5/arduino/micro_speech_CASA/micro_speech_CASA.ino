@@ -62,7 +62,7 @@ int8_t* model_input_buffer = nullptr;
 */
 
 void setup() {
-
+  Serial.begin(9600);
   // Set up logging. 
   static tflite::MicroErrorReporter micro_error_reporter;
   error_reporter = &micro_error_reporter;

@@ -50,6 +50,7 @@ void RespondToCommand(tflite::ErrorReporter* error_reporter,
   if (is_new_command) {
     TF_LITE_REPORT_ERROR(error_reporter, "Heard %s (%d) @%dms", found_command,
                          score, current_time);
+                         Serial.print(found_command[0]);
     // If we hear a command, light up the appropriate LED
     if (found_command[0] == 'y') {
       last_command_time = current_time;
