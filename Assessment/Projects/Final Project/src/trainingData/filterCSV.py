@@ -6,7 +6,7 @@ import os
 # read the file name in the folder
 def readFileName():
     fileNames = []
-    for root, dirs, files in os.walk("/Users/dylim/Documents/CASA/CE/casa0018/Assessment/Projects/Final Project/src/trainingData/test_3/validate_filtered"):
+    for root, dirs, files in os.walk("/Users/dylim/Documents/CASA/CE/casa0018/Assessment/Projects/Final Project/src/trainingData/test_6/depth_filtered"):
         for file in files:
             # if the file is png file
             if file.endswith(".png"):
@@ -20,14 +20,14 @@ def readFileName():
 # read the csv file
 def readCSV():
     fileNames = readFileName()
-    with open('/Users/dylim/Documents/CASA/CE/casa0018/Assessment/Projects/Final Project/src/trainingData/test_3/validateData.csv', 'r') as f:
+    with open('/Users/dylim/Documents/CASA/CE/casa0018/Assessment/Projects/Final Project/src/trainingData/test_6/data_03-21 20:23:51.csv', 'r') as f:
         reader = csv.reader(f)
         # skip the header
         next(reader)
         for row in reader:
             if row[0] in fileNames:
                 # write the data to the new csv file
-                with open('/Users/dylim/Documents/CASA/CE/casa0018/Assessment/Projects/Final Project/src/trainingData/test_3/validate_filtered.csv', 'a') as f:
+                with open('/Users/dylim/Documents/CASA/CE/casa0018/Assessment/Projects/Final Project/src/trainingData/test_6/filtered.csv', 'a') as f:
                     writer = csv.writer(f)
                     writer.writerow(row)
 
