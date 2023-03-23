@@ -2,6 +2,9 @@
 
 An AI-powered indoor positioning system to help new students and staff navigate the Marsh Gate building at UCL East.
 
+## The latest training model
+>https://github.com/Lionel-Lim/casa0018/blob/main/Assessment/Projects/Final%20Project/src/trainingData/test_6/test6.ipynb
+
 ## Problem Definition
 
 ### Project Overview
@@ -10,6 +13,7 @@ Navigating large, complex buildings like the newly constructed Marsh Gate at UCL
 ### Research Question
 >Can we accurately determine a user's indoor location using a combination of depth images, orientation, and acceleration data collected from an AI-powered smart camera?
 
+![Collected Data shown on Blender](https://raw.githubusercontent.com/Lionel-Lim/casa0018/main/Assessment/Report/src/Visualisation_Blender.png)
 
 ### Data Available
 I collected five training sets in the CE Lab, each containing around 3,000 images. The data collection process involved gathering depth images, orientation, and acceleration data along with the position of the user.
@@ -17,11 +21,15 @@ I collected five training sets in the CE Lab, each containing around 3,000 image
 
 ## Documentation of Experiments and Results
 
+![Tensorflow Model Layer Structure](https://raw.githubusercontent.com/Lionel-Lim/casa0018/main/Assessment/Report/src/Visualisation_AIModel.png)
+
 ### Model Training Results
 Various training runs were conducted to fine-tune the model, adjusting parameters such as learning rate, epochs, and batch size. I achieved the best performance using a combination of depth and IMU data.
 
 ### Model Architecture Choices
 The model processes depth information through CNN layers and IMU data through dense layers. Dropout layers are used to prevent overfitting. However, the role of IMU data is weak.
+
+![Training Result in matrix form](https://raw.githubusercontent.com/Lionel-Lim/casa0018/main/Assessment/Report/src/Visulisation_ResultMatrix.png)
 
 ### Visual Record of Experiments
 The AI model's performance was assessed by visualising the predicted grid zones against the actual data points. This allowed us to better understand the model's ability to accurately locate users within the building.

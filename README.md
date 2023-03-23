@@ -1,3 +1,5 @@
+>Project : https://github.com/Lionel-Lim/casa0018/tree/main/Assessment/Projects/Final%20Project
+
 # CASA0018: Deep Learning for Sensor Networks
 
 This repository contains the lab materials for Connected Environments DL4Sn module. The code folders are divided into the weekly activities. A summary overview of the course is below with a more detailed overview on the UCL Moodle site for CASA0018.
