@@ -1,4 +1,4 @@
->Project : https://github.com/Lionel-Lim/casa0018/tree/main/Assessment/Projects/Final%20Project
+>Project : https://github.com/Lionel-Lim/casa0018/tree/main/Assessment/Final%20Project
 
 # CASA0018: Deep Learning for Sensor Networks
 

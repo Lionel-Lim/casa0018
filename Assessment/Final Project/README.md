@@ -11,7 +11,7 @@ An AI-powered indoor positioning system to help new students and staff navigate 
 Navigating large, complex buildings like the newly constructed Marsh Gate at UCL East can be challenging for newcomers. Traditional GPS signals are limited indoors due to structural barriers, making it difficult to pinpoint a user's location. This project aims to address this issue by utilizing a smart camera with built-in AI capabilities to identify users' locations within the building.
 
 ### Research Question
->Can we accurately determine a user's indoor location using a combination of depth images, orientation, and acceleration data collected from an AI-powered smart camera?
+>Can we accurately determine a user's indoor location using a depth images from an AI-powered smart camera?
 
 ![Collected Data shown on Blender](https://raw.githubusercontent.com/Lionel-Lim/casa0018/main/Assessment/Report/src/Visualisation_Blender.png)
 
