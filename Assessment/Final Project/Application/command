@@ -1,0 +1,1 @@
+mo_tf.py --saved_model_dir saved_model_directory --input_shape [1, H, W, C] --data_type FP16 --output_dir output_directory
